@@ -477,7 +477,7 @@ class ImagePanel(wx.Panel):
         self.Refresh()
         self.thiscurrentphotonumber = self.current_photo
 
-        self.progress_bar.SetValue(self.progress_bar.GetRange() * len(self.already_browser_list) / len(self.photos))
+        self.progress_bar.SetValue(int(self.progress_bar.GetRange() * len(self.already_browser_list) / len(self.photos)))
 
         if self.current_photo == self.dataframe.shape[0] -1:
             self.progress_bar.SetValue(self.progress_bar.GetRange())
