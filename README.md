@@ -1,4 +1,4 @@
-# tinyHulkv --auto_labelling tool
+# tinyHulk --auto_labelling tool
 
 **1. Introduction**
 
