@@ -13,6 +13,7 @@ Create a virtual environment using the project requirements. Activate that new e
 - tensorflow: pip install tensorflow
 - tensorflow-object-detection: pip install tensorflow-object-detection-api
 - install wxpython: (For unbuntu, check what version of your ubuntu to download and install a proper package. Below is command to install wxPython for ubuntu 18.04: pip install -U https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-18.04/wxPython-4.0.3-cp36-cp36m-linux_x86_64.whl .)
+   If error libSDL2-2.0.so.0: cannot open shared object file: No such file or directory. Install sudo apt-get install git curl libsdl2-mixer-2.0-0 libsdl2-image-2.0-0 libsdl2-2.0-0
 
 **3. How to Use**
 
