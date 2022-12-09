@@ -7,7 +7,7 @@ The program automatically annotates objects in the input _green-background frame
 **2. Package Installation**
 (Prefer to install in a virtual environment. For example, in pycharm Press Ctrl+Alt+S to open the IDE settings and select Project <project name> | Python Interpreter.
 
-Expand the list of the available interpreters and click the Show All link. Alternatively, click the The Configure project interpreter icon and select Show All.)
+Create a virtual environment using the project requirements. Activate that new environment (source venv/bin/activate), then install the packages below:)
 - opencv: pip install opencv-contrib-python
 - pandas: pip install pandas
 - tensorflow: pip install tensorflow
