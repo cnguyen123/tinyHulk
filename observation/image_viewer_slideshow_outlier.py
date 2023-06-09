@@ -19,7 +19,7 @@ def two_image_is_identical(file_1, file_2):
 
     diff = hash1 - hash2
     print(diff)
-    if diff >8:
+    if diff >6:
         return False
     return True
 
@@ -59,7 +59,8 @@ class ImagePanel(wx.Panel):
         self.layout()
         self.TimeFlick = 200 #ms
         self.slideshow_timer = wx.Timer(self)
-        self.Bind(wx.EVT_TIMER, self.on_next, self.slideshow_timer)
+        #self.Bind(wx.EVT_TIMER, self.on_next, self.slideshow_timer)
+        self.Bind(wx.EVT_TIMER, self.on_next_new, self.slideshow_timer)
         self.csv_file = ""
 
         self.dataframe = []
@@ -317,6 +318,10 @@ class ImagePanel(wx.Panel):
         if label == "Slide Show":
             self.slideshow_timer.Start(self.TimeFlick)
             btn.SetLabel("Stop")
+            ##update to auto correct wrong bounding box 20230608
+
+
+            ##end update
         else:
             self.slideshow_timer.Stop()
             btn.SetLabel("Slide Show")
@@ -477,7 +482,7 @@ class ImagePanel(wx.Panel):
         self.Refresh()
         self.thiscurrentphotonumber = self.current_photo
 
-        self.progress_bar.SetValue(int(self.progress_bar.GetRange() * len(self.already_browser_list) / len(self.photos)))
+        self.progress_bar.SetValue(self.progress_bar.GetRange() * len(self.already_browser_list) / len(self.photos))
 
         if self.current_photo == self.dataframe.shape[0] -1:
             self.progress_bar.SetValue(self.progress_bar.GetRange())
