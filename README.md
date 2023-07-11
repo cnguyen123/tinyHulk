@@ -28,3 +28,6 @@ Create a virtual environment using the project requirements. Activate that new e
 - Step 5: Create tfrecord for the new background frames with **_tfrecord_create.py_** (2.tfrecord)
 - Step 6: Merge the two tfrecords (1.tfrecord, 2.tfrecord) created above with _**merge_tfrecords.py**_
 - Step 7: Spit the merged_tfrecord to train.tfrecord, test.tfrecord, val.tfrecord with _**tfrecord_split.py**_
+
+**4. Tech Report**
+Chanh Nguyen et al., tinyHulk: Lightweight Annotation for Wearable Cognitive Assistance, Carnegie Mellon University, 2023. 
