@@ -30,4 +30,4 @@ Create a virtual environment using the project requirements. Activate that new e
 - Step 7: Spit the merged_tfrecord to train.tfrecord, test.tfrecord, val.tfrecord with _**tfrecord_split.py**_
 
 **4. Tech Report**
-Chanh Nguyen et al., tinyHulk: Lightweight Annotation for Wearable Cognitive Assistance, Carnegie Mellon University, 2023. 
+Chanh Nguyen et al. tinyHulk: Lightweight Annotation for Wearable Cognitive Assistance, 29 February 2024, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-3991530/v1]
